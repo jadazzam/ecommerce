@@ -1,37 +1,16 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <figure id="logo" class="columns six navbar-brand" data-hook><%= logo %></figure>
-    <ul class="navbar-nav mr-auto">
+    <ul class="navbar-nav mr-auto dropdown">
       <% @taxonomies.each do |taxonomy| %>
-        <li class="nav-item dropdown active">
-          <%= link_to '#', data: { toggle: "dropdown"}, "aria-haspopup" => "true" do %>
-            <%= taxonomy.name %> <span class='caret'></span>
+        <li>
+          <%= link_to '#', data: { toggle: "dropdown"}, "aria-haspopup" => "true", "class" => "nav-link dropdown-toggle" do %>
+            <%= taxonomy.name %>
           <% end %>
-          <%= nav_tree(taxonomy.root, @taxon, 1) %>
+          <div class="dropdown-item" aria-labelledby="navbarDropdown">
+            <%= nav_tree(taxonomy.root, @taxon, 1) %>
         </li>
       <% end %>
-    <li class="nav-item">
-    </li>
-    <li class="nav-item active">
-      <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">Link</a>
-    </li>
-    <li class="nav-item dropdown">
-      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-        Dropdown
-      </a>
-      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-        <a class="dropdown-item" href="#">Action</a>
-        <a class="dropdown-item" href="#">Another action</a>
-        <div class="dropdown-divider"></div>
-        <a class="dropdown-item" href="#">Something else here</a>
-      </div>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link disabled" href="#">Disabled</a>
-    </li>
     </ul>
   </div>
 </nav>

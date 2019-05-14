@@ -58,6 +58,8 @@ GEM
       execjs
     awesome_nested_set (3.1.4)
       activerecord (>= 4.0.0, < 5.3)
+    barista (1.3.0)
+      coffee-script (~> 2.2)
     bcrypt (3.1.12)
     bindex (0.7.0)
     bootsnap (1.4.4)
@@ -362,6 +364,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  barista
   bootsnap (>= 1.1.0)
   bootstrap-sass
   byebug
