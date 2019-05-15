@@ -8,7 +8,10 @@ Rails.application.configure do
 
   # Do not eager load code on boot.
   config.eager_load = false
-  config.assets.debug = false
+  config.assets.debug = true
+  # config.sass.inline_source_maps = true
+  # config.sass.line_comments = false
+  # added those 2 lines above following instructions
 
   # Show full error reports.
   config.consider_all_requests_local = true
