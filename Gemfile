@@ -29,10 +29,10 @@ gem 'barista'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'sassc-rails', github: 'sass/sassc-rails'
+gem 'sassc-rails'
 
 # gem 'bootstrap', '~> 4.3.1'
-# gem 'sprockets-rails', :require => 'sprockets/railtie'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'jquery-rails'
 
 gem 'bootstrap-sass'

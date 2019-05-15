@@ -1,16 +1,17 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-static-top">
+  <figure id="logo" class="columns six navbar-brand" data-hook><%= logo img_options: { class: 'img-responsive', width: '150'} %></figure>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto dropdown">
-      <li><figure id="logo" class="columns six navbar-brand" data-hook><%= logo %></figure></li>
       <% @taxonomies.each do |taxonomy| %>
         <li>
-          <%= link_to '#', data: { toggle: "dropdown"}, "aria-haspopup" => "true", "class" => "nav-link dropdown-toggle" do %>
+          <%= link_to '#', data: { toggle: "dropdown"}, "aria-haspopup" => "true", "class" => "nav-link dropdown-toggle dropdown-item" do %>
             <%= taxonomy.name %>
           <% end %>
-          <div class="dropdown-item" aria-labelledby="navbarDropdown">
             <%= nav_tree(taxonomy.root, @taxon, 1) %>
+          <div class="" aria-labelledby="navbarDropdown">
         </li>
       <% end %>
     </ul>
   </div>
 </nav>
+
