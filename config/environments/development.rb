@@ -11,6 +11,7 @@ Rails.application.configure do
   config.assets.debug = true
   # config.sass.inline_source_maps = true
   # config.sass.line_comments = false
+  config.assets.digest = false # tuto me dit de faire ça pour updater mon SASS car obsolète maintenant ==> https://github.com/guard/guard-livereload/issues/169#issuecomment-271788185
   # added those 2 lines above following instructions
 
   # Show full error reports.

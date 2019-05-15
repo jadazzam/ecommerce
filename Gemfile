@@ -9,6 +9,9 @@ gem 'rails', '~> 5.2.3'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'puma', '~> 3.11'
+
+gem 'bourbon' #following instructions from : https://guides.solidus.io/developers/upgrades/migrate-from-spree.html
+
 # Use SCSS for stylesheets
 # gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
@@ -26,7 +29,6 @@ gem 'barista'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'sass-rails', require: false
 gem 'sassc-rails', github: 'sass/sassc-rails'
 
 # gem 'bootstrap', '~> 4.3.1'
