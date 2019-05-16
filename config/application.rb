@@ -8,6 +8,7 @@ Bundler.require(*Rails.groups)
 
 module Ecommerce
   class Application < Rails::Application
+    config.public_file_server.enabled
 
     config.to_prepare do
       # Load application's model / class decorators
