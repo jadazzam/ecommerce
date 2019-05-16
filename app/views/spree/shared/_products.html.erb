@@ -21,40 +21,32 @@
   <% end %>
 </div>
 
-
-<div class="card" style="width: 18rem;">
-  <img class="card-img-top" src="..." alt="Card image cap">
-  <div class="card-body">
-    <h5 class="card-title">Card title</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-    <a href="#" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
-
 <% if products.any? %>
   <div id="products" class="inline product-listing" data-hook>
     <% products.each do |product| %>
-      <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
-      <div id="product_<%= product.id %>" style="width: 18rem;" class="columns three card text-center <%= cycle("alpha", "secondary", "", "omega secondary", name: "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
-        <% cache(@taxon.present? ? [I18n.locale, current_pricing_options, @taxon, product] : [I18n.locale, current_pricing_options, product]) do %>
-          <div class="card-img-top">
-            <%= link_to(render('spree/shared/image', image: product.gallery.images.first, size: :small, itemprop: "image"), url, itemprop: 'url') %>
-          </div>
-          <div class="card-body">
-            <h5>
-              <%= link_to truncate(product.name, length: 50), url, class: 'info card-title', itemprop: "name", title: product.name %>
-            </h5>
-            <span itemprop="offers" itemscope itemtype="http://schema.org/Offer">
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <% if price = product.price_for(current_pricing_options) %>
-                <span class="price selling" itemprop="price" content="<%= price.to_d %>">
-                  <a href="#" class="btn btn-primary"><%= price.to_html %></a>
+      <div class="column">
+        <% url = spree.product_path(product, taxon_id: @taxon.try(:id)) %>
+        <div id="product_<%= product.id %>" style="width: 18rem;" class="columns three card text-center <%= cycle("alpha", "secondary", "", "omega secondary", name: "classes") %>" data-hook="products_list_item" itemscope itemtype="http://schema.org/Product">
+          <% cache(@taxon.present? ? [I18n.locale, current_pricing_options, @taxon, product] : [I18n.locale, current_pricing_options, product]) do %>
+            <div class="card-img-top">
+              <%= link_to(render('spree/shared/image', image: product.gallery.images.first, size: :small, itemprop: "image"), url, itemprop: 'url') %>
+            </div>
+            <div class="card-body">
+              <h5>
+                <%= link_to truncate(product.name, length: 50), url, class: 'info card-title', itemprop: "name", title: product.name %>
+              </h5>
+              <span itemprop="offers" itemscope itemtype="http://schema.org/Offer"></span>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <% if price = product.price_for(current_pricing_options) %>
+                  <span class="price selling" itemprop="price" content="<%= price.to_d %>">
+                    <a href="#" class="btn btn-primary"><%= price.to_html %></a>
+                  </span>
+                <% end %>
+                <span itemprop="priceCurrency" content="<%= current_pricing_options.currency %>">
                 </span>
-              <% end %>
-              <span itemprop="priceCurrency" content="<%= current_pricing_options.currency %>"></span>
-            </span>
-          </div>
-        <% end %>
+            </div>
+          <% end %>
+        </div>
       </div>
     <% end %>
     <% reset_cycle("classes") %>
