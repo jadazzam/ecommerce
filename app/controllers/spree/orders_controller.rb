@@ -43,7 +43,6 @@ module Spree
       authorize! :read, @order, cookies.signed[:guest_token]
       associate_user
       @taxonomies = Spree::Taxonomy.includes(root: :children)
-
     end
 
     # Adds a new item to the order (creating a new order if none already exists)

@@ -8,14 +8,15 @@ gem 'rails', '~> 5.2.3'
 # Use postgresql as the database for Active Record
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
-gem 'puma', '~> 3.11'
 gem 'popper_js'
+gem 'puma', '~> 3.11'
 
-gem 'bourbon' #following instructions from : https://guides.solidus.io/developers/upgrades/migrate-from-spree.html
+gem 'bourbon' # following instructions from : https://guides.solidus.io/developers/upgrades/migrate-from-spree.html
 
 # Use SCSS for stylesheets
 gem 'sass', '~> 3.4', '>= 3.4.22'
-# gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0'
+# gem 'sassc-rails'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Transpile app-like JavaScript. Read more: https://github.com/rails/webpacker
@@ -31,10 +32,9 @@ gem 'barista'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
-gem 'sassc-rails'
 
-# gem 'bootstrap', '~> 4.3.1'
-# gem 'sprockets-rails', :require => 'sprockets/railtie'
+# gem 'bootstrap'
+gem 'sprockets-rails', :require => 'sprockets/railtie'
 gem 'jquery-rails'
 
 gem 'bootstrap-sass'
