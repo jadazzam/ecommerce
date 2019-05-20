@@ -1,37 +1,91 @@
-* {
-  box-sizing: border-box;
+.body-container {
+  // width: 1000px;
+  // margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
 }
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 25%;
-  padding: 0 10px;
-}
+// @media (max-width: 700px) {
+//   .container {
+//     width: 400px;
+//   }
+// }
 
-/* Remove extra left and right margins, due to padding in columns */
-.row {margin: 0 -5px;}
+// @media (max-width: 900px) {
+//   .container {
+//     width: 650px;
+//   }
+// }
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+// .wrapper {
+// // display:grid;
+// // grid-template-columns: 1fr 1fr 1fr;
+//   display: flex;
+// }
 
-/* Style the counter cards */
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-  padding: 16px;
+.product-card {
+  flex-grow: 1;
+  margin: 5px 5px 5px 5px;
+  box-sizing: content-box;
   text-align: center;
-  background-color: #f1f1f1;
+  justify-content: space-around;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  height: 250px;
+  font-size: 14px;
+  text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+  border-radius: 5px;
 }
 
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-  .column {
-    width: 100%;
-    display: block;
-    margin-bottom: 20px;
-  }
-}
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // * {
+// //   box-sizing: border-box;
+// // }
+
+// // /* Float four columns side by side */
+// // .column {
+// //   float: left;
+// //   width: 25%;
+// //   padding: 0 10px;
+// // }
+
+// // /* Remove extra left and right margins, due to padding in columns */
+// // .row {
+// //   margin: 0 -5px;
+// //   display: flex;
+// // }
+
+// // /* Clear floats after the columns */
+// // .row:after {
+// //   content: "";
+// //   display: table;
+// //   clear: both;
+// // }
+
+// // /* Style the counter cards */
+// // .card {
+// //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+// //   padding: 16px;
+// //   text-align: center;
+// //   background-color: #f1f1f1;
+// // }
+
+// // /* Responsive columns - one column layout (vertical) on small screens */
+// // @media screen and (max-width: 600px) {
+// //   .column {
+// //     width: 100%;
+// //     display: block;
+// //     margin-bottom: 20px;
+// //   }
+// // }
