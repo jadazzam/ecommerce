@@ -1,37 +1,17 @@
-.containe {
-  // width: 1000px;
-  // margin: 0 auto;
-  display: flex;
-  justify-content: space-around;
+.cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
 }
 
-// @media (max-width: 700px) {
-//   .container {
-//     width: 400px;
-//   }
-// }
-
-// @media (max-width: 900px) {
-//   .container {
-//     width: 650px;
-//   }
-// }
-
-// .wrapper {
-// // display:grid;
-// // grid-template-columns: 1fr 1fr 1fr;
-//   display: flex;
-// }
-
-.product-card {
-  flex-grow: 1;
+.card {
   margin: 1em auto 1em; /* Added */
-  float: none; /* Added */
+  // float: none; /* Added */
   // margin-bottom: 10px; /* Added */
   // margin: 5px 5px 5px 5px;
-  box-sizing: content-box;
+  // box-sizing: content-box;
   text-align: center;
-  justify-content: space-around;
+  // justify-content: space-around;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
   height: 250px;
   font-size: 14px;
@@ -39,8 +19,16 @@
   border-radius: 5px;
 }
 
-.product-card-image {
+@media(max-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
 
+@media(max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
 }
 
 
@@ -55,43 +43,62 @@
 
 
 
-// // * {
-// //   box-sizing: border-box;
+
+
+
+
+// .container {
+//   // width: 1000px;
+//   // margin: 0 auto;
+//   display: flex;
+//   justify-content: space-around;
+// }
+
+// // @media (max-width: 700px) {
+// //   .container {
+// //     width: 400px;
+// //   }
 // // }
 
-// // /* Float four columns side by side */
-// // .column {
-// //   float: left;
-// //   width: 25%;
-// //   padding: 0 10px;
+// // @media (max-width: 900px) {
+// //   .container {
+// //     width: 650px;
+// //   }
 // // }
 
-// // /* Remove extra left and right margins, due to padding in columns */
-// // .row {
-// //   margin: 0 -5px;
+// // .wrapper {
+// // // display:grid;
+// // // grid-template-columns: 1fr 1fr 1fr;
 // //   display: flex;
 // // }
 
-// // /* Clear floats after the columns */
-// // .row:after {
-// //   content: "";
-// //   display: table;
-// //   clear: both;
-// // }
+// .product-card {
+//   flex-grow: 1;
+//   margin: 1em auto 1em; /* Added */
+//   float: none; /* Added */
+//   // margin-bottom: 10px; /* Added */
+//   // margin: 5px 5px 5px 5px;
+//   box-sizing: content-box;
+//   text-align: center;
+//   justify-content: space-around;
+//   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+//   height: 250px;
+//   font-size: 14px;
+//   text-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+//   border-radius: 5px;
+// }
 
-// // /* Style the counter cards */
-// // .card {
-// //   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
-// //   padding: 16px;
-// //   text-align: center;
-// //   background-color: #f1f1f1;
-// // }
+// .product-card-image {
 
-// // /* Responsive columns - one column layout (vertical) on small screens */
-// // @media screen and (max-width: 600px) {
-// //   .column {
-// //     width: 100%;
-// //     display: block;
-// //     margin-bottom: 20px;
-// //   }
-// // }
+// }
+
+
+
+
+
+
+
+
+
+
+
