@@ -10,8 +10,16 @@
   </head>
   <body class="<%= body_class %>" id="<%= @body_id || 'default' %>" data-hook="body">
     <%= render partial: 'spree/shared/header' %>
+
     <div class="container">
       <div id="wrapper" class="" data-hook>
+    <div id="banner">
+      <span id="banner-text">
+        <h1>NEW SUMMER COLLECTION</h1>
+        <p>Shop now!</p>
+      </span>
+    </div>
+
 
         <%= taxon_breadcrumbs(@taxon) %>
         <%#= render partial: 'spree/shared/sidebar' if content_for? :sidebar %>
@@ -24,6 +32,13 @@
         <%= yield :templates %>
       </div>
     </div>
+
+    <div data-hook=""> <!-- I need to check what is data-hook and its value -->
+      <% cache(cache_key_for_products) do %>
+        <%= render partial: 'spree/shared/contact_form' %>
+      <% end %>
+    </div>
+
     <%= render partial: 'spree/shared/footer' %>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
