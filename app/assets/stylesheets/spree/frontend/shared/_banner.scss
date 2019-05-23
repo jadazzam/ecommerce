@@ -2,6 +2,7 @@
   background-image: image-url('spree/banner.png');
   background-size: cover;
   height: 70vh;
+  // height: 100%;
   text-align: center;
   color: white;
   margin: 0 0 3em 0;
@@ -9,6 +10,8 @@
   margin-right: auto;
   position: relative;
   margin-top: 12vh;
+  width: auto;
+  background-position: center;
 }
 
 #banner-text {

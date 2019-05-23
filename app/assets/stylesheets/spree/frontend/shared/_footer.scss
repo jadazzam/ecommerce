@@ -131,14 +131,21 @@
 }
 
 .footer-distributed form button{
-  border-radius: 3px;
-  background-color:  #ffffff;
+  border-radius: 10px;
+  background: rgba(226, 236, 238, 0.7);
   color: #7C8488;
-  border: 0;
-  padding: 15px 50px;
-  font-weight: bold;
+  border: 1px solid rgba(80, 80, 80, 1);
+  padding: 8px 77px;
   float: right;
+  background-color:  #ffffff;
+
+  &:hover {
+    background: rgba(226, 236, 238, 1);
+    border: 1px solid rgba(80, 80, 80, 1);
+    font-weight: bold;
+  }
 }
+
 
 /* If you don't want the footer to be responsive, remove these media queries */
 
@@ -192,12 +199,6 @@
     float: none;
   }
 }
-
-
-
-
-
-
 
 
 

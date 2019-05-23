@@ -84,7 +84,6 @@
       border: 1px solid rgba(80, 80, 80, 1);
       padding: 8px 77px;
       border-radius: 10px;
-      width: 15%;
       margin: 10px 0;
       // text-align: center;
       float: right;
@@ -92,6 +91,7 @@
       &:hover {
         background: rgba(226, 236, 238, 1);
         border: 1px solid rgba(80, 80, 80, 1);
+        font-weight: bold;
       }
     }
     }
