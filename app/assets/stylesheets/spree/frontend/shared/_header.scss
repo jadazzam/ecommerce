@@ -1,3 +1,17 @@
 #logo {
   max-height: 45px;
 }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + #wrapper {
+  padding-top: 60px;
+}
+
+.navbar {
+  background-color: #F7FCFD;
+}
