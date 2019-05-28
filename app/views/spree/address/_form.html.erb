@@ -48,7 +48,7 @@
       <% have_states = !address.country.states.empty? %>
       <%= form.label :state, t('spree.state') %>
 
-      <span class="js-address-fields" style="display: none;">
+      <span class="js-address-fields">
         <%=
           form.collection_select(
             :state_id, address.country.states, :id, :name,

@@ -29,7 +29,6 @@ module Spree
     # Updates the order and advances to the next state (when possible.)
     def edit
       @taxonomies = Spree::Taxonomy.includes(root: :children)
-
     end
 
     def update
