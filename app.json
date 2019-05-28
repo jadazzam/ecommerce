@@ -1,11 +1,13 @@
 {
   "name": "Carré Turquoise",
-  "description": "A demonstration store using Solidus with some test data.",
+  "description": "Accessories",
   "repository": "https://github.com/jadazzam/ecommerce",
-  "logo": "https://solidus.io/assets/images/favicon/favicon.ico",
+  "logo": "",
   "keywords": [
-    "solidus",
-    "demo"
+    "carré",
+    "turquoise",
+    "accessories",
+    "boutique"
   ],
   "buildpacks": [
     {"url": "https://github.com/solidusio/heroku-buildpack-solidus-demo.git"}
@@ -19,7 +21,7 @@
   "env": {
     "ADMIN_EMAIL": {
       "description": "We will create an admin user with this email.",
-      "value": "admin@example.com"
+      "value": "jadazzam@me.com"
     },
     "ADMIN_PASSWORD": {
       "description": "We will create an admin user with this password.",
