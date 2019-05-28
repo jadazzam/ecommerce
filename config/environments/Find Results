@@ -1,0 +1,10 @@
+Searching 2462 files for ":amazon" (regex)
+
+/Users/jadazzam/code/jadazzam/ecommerce/config/environments/production.rb:
+   40
+   41    # Store uploaded files on the local file system (see config/storage.yml for options)
+   42:   config.active_storage.service = :production
+   43
+   44    # Mount Action Cable outside main process or domain
+
+1 match in 1 file
