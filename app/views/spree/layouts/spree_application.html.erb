@@ -12,7 +12,6 @@
     <%= render partial: 'spree/shared/header' %>
 
     <div class="container">
-      <%= render partial: 'spree/shared/banner' %>
       <div id="wrapper">
         <%= taxon_breadcrumbs(@taxon) %>
         <%= flash_messages %>
@@ -20,7 +19,6 @@
         <%= yield :templates %>
       </div>
     </div>
-      <%= render partial: 'spree/shared/contact_form' %>
     <div class="container">
       <%= render partial: 'spree/shared/footer' %>
     </div>
