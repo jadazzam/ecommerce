@@ -25,6 +25,7 @@ gem 'webpacker'
 gem 'simple_form'
 gem 'yaml_db'
 gem "aws-sdk-s3"
+gem 'mapbox-gl-rails'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.2'
 gem 'barista'
