@@ -8,7 +8,7 @@
 @import 'spree/frontend/variables';
 @import 'spree/frontend/shared/header';
 @import 'spree/frontend/shared/footer';
-@import 'mapbox-gl';
+
 @import 'font-awesome';
 
 // // /*--------------------------------------*/
@@ -22,6 +22,7 @@ body {
   // line-height: 18px;
   background-color: $layout_background_color;
   // -webkit-font-smoothing: antialiased;
+  padding-top: 70px;
 }
 
 #wrapper {

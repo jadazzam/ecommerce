@@ -1,9 +1,15 @@
-.footer-distributed{
+.footer{
   // left:0px;
   // bottom:0px;
-  height:70vh;
+  height:50vh;
   width:100%;
-  padding-top: 1em;
+  position: absolute;
+}
+
+.footer container {
+  width: auto;
+  max-width: 680px;
+  padding: 0 15px;
 }
 
 /* Footer left */
