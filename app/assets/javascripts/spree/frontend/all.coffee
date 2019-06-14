@@ -4,4 +4,4 @@
 #= require bootstrap-sprockets
 #= require jquery_ujs
 #= require spree
-#= require ./shared/testjava
+#= require ./shared/testGetElement
