@@ -1,0 +1,8 @@
+<div class="container">
+  <div id="wrapper">
+    <%= taxon_breadcrumbs(@taxon) %>
+    <%= flash_messages %>
+    <%= yield %>
+    <%= yield :templates %>
+  </div>
+</div>
