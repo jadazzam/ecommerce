@@ -35,9 +35,9 @@
       </div>
 
       <div class="col-md-6" data-hook="product_right_part">
-        <div class="" data-hook="product_right_part_wrap">
+        <div class="" data-hook="product_right_part_wrap" class="panel panel-success">
           <div id="product-description" data-hook="product_description">
-            <div itemprop="description" data-hook="description">
+            <div itemprop="description" data-hook="description" class="panel-body">
               <%= product_description(@product) rescue t('spree.product_has_no_description') %>
             </div>
             <div id="cart-form" data-hook="cart_form">
