@@ -9,7 +9,7 @@ gem 'rails', '~> 5.2.3'
 gem 'pg', '>= 0.18', '< 2.0'
 # Use Puma as the app server
 gem 'popper_js'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'bourbon' # following instructions from : https://guides.solidus.io/developers/upgrades/migrate-from-spree.html
 
 # Use SCSS for stylesheets
